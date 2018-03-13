@@ -1,5 +1,6 @@
 ---
 title: Welcome
+description: Welcome on Jekyll's official documentation
 permalink: /docs/home/
 redirect_from: /docs/index.html
 ---

@@ -1,5 +1,6 @@
 ---
 title: Themes
+description: Learn how to use and develop themes for Jekyll.
 permalink: /docs/themes/
 ---
 

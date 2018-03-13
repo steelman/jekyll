@@ -1,5 +1,6 @@
 ---
 title: Permalinks
+description: Learn how to configure permalinks in Jekyll
 permalink: /docs/permalinks/
 ---
 

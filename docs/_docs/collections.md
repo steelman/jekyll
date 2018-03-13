@@ -1,5 +1,6 @@
 ---
 title: Collections
+description: Learn how add to new types of content to your website with Jekyll's collections.
 permalink: /docs/collections/
 ---
 
@@ -46,19 +47,22 @@ defaults:
       layout: page
 ```
 
-<div class="note">
-  <h5>Gather your collections {%- include docs_version_badge.html version="3.7.0" -%}</h5>
+<div class="note" markdown="1">
 
-  <p>You can optionally specify a directory to store all your collections in the same place with <code>collections_dir: my_collections</code>.</p>
+##### Gather your collections {%- include docs_version_badge.html version="3.7.0" -%}
 
-  <p>Then Jekyll will look in <code>my_collections/_books</code> for the <code>books</code> collection, and
-  in <code>my_collections/_recipes</code> for the <code>recipes</code> collection.</p>
+You can optionally specify a directory to store all your collections in the same place with `collections_dir: my_collections`.
+
+Then Jekyll will look in `my_collections/_books` for the `books` collection, and in `my_collections/_recipes` for the `recipes` collection.
+
 </div>
 
-<div class="note warning">
-  <h5>Be sure to move posts into custom collections directory</h5>
+<div class="note warning" markdown= "1">
 
-  <p>If you specify a directory to store all your collections in the same place with <code>collections_dir: my_collections</code>, then you will need to move your <code>_posts</code> directory to <code>my_collections/_posts</code>. Note that, the name of your collections directory cannot start with an underscore (`_`).</p>
+##### Be sure to move posts into custom collections directory
+
+If you specify a directory to store all your collections in the same place with `collections_dir: my_collections`, then you will need to move your `_posts` directory to `my_collections/_posts`. Note that, the name of your collections directory cannot start with an underscore (`_`).
+
 </div>
 
 ### Step 2: Add your content {#step2}
@@ -69,11 +73,12 @@ after the front matter is pushed into the document's `content` attribute. If no 
 matter is provided, Jekyll will not generate the file in your collection.
 
 <div class="note info">
-  <h5>Be sure to name your directories correctly</h5>
-  <p>
+
+##### Be sure to name your directories correctly
+
 The folder must be named identically to the collection you defined in
-your <code>_config.yml</code> file, with the addition of the preceding <code>_</code> character.
-  </p>
+your `_config.yml` file, with the addition of the preceding `_` character.
+
 </div>
 
 ### Step 3: Optionally render your collection's documents into independent files {#step3}
@@ -107,13 +112,14 @@ To list items from the collection, on that page or any other, you can use:
 ```
 {% endraw %}
 
-<div class="note info">
-  <h5>Don't forget to add YAML for processing</h5>
-  <p>
-  Files in collections that do not have front matter are treated as
-  <a href="/docs/static-files">static files</a> and simply copied to their
-  output location without processing.
-  </p>
+<div class="note info" markdown="1">
+
+##### Don't forget to add YAML for processing
+
+Files in collections that do not have front matter are treated as
+[static files](static-files/) and simply copied to their
+output location without processing.
+
 </div>
 
 ## Configuring permalinks for collections {#permalinks}
@@ -337,15 +343,14 @@ you specified in your `_config.yml` (if present) and the following information:
 </table>
 </div>
 
-<div class="note info">
-  <h5>A Hard-Coded Collection</h5>
-  <p>In addition to any collections you create yourself, the
-  <code>posts</code> collection is hard-coded into Jekyll. It exists whether
-  you have a <code>_posts</code> directory or not. This is something to note
-  when iterating through <code>site.collections</code> as you may need to
-  filter it out.</p>
-  <p>You may wish to use filters to find your collection:
-  <code>{% raw %}{{ site.collections | where: "label", "myCollection" | first }}{% endraw %}</code></p>
+<div class="note info" markdown="1">
+
+##### A Hard-Coded Collection
+
+In addition to any collections you create yourself, the `posts` collection is hard-coded into Jekyll. It exists whether you have a `_posts` directory or not. This is something to note when iterating through `site.collections</code> as you may need to filter it out.
+
+You may wish to use filters to find your collection: `{{ site.collections | where: "label", "myCollection" | first }}`
+
 </div>
 
 <div class="note info">

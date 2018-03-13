@@ -71,6 +71,8 @@ On Android (with Termux) you can install all requirements by running:
 apt update && apt install libffi-dev clang ruby-dev make
 ```
 
+### macOS
+
 On macOS, you may need to update RubyGems (using `sudo` only if necessary):
 
 ```sh

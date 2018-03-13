@@ -1,5 +1,6 @@
 ---
 title: Writing posts
+description: Learn how to write posts in Jekyll.
 permalink: /docs/posts/
 ---
 

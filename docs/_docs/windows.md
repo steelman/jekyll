@@ -1,5 +1,6 @@
 ---
 title: Jekyll on Windows
+description: Official guide to install Jekyll on Windows.
 permalink: /docs/windows/
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Quick-start guide
+description: Getting started with Jekyll's default theme
 permalink: /docs/quickstart/
 ---
-
 
 If you already have a full [Ruby](https://www.ruby-lang.org/en/downloads/) development environment with all headers and [RubyGems](https://rubygems.org/pages/download) installed (see Jekyll's [requirements](/docs/installation/#requirements)), you can create a new Jekyll site by doing the following:
 
@@ -43,7 +43,7 @@ If you encounter any unexpected errors during the above, please refer to the [tr
 * We recommend setting up Jekyll with a gem-based theme but if you want to start with a blank slate, use `jekyll new myblog --blank`
 * To learn about other parameters you can include with `jekyll new`, type `jekyll new --help`.
 
-When in doubt, use the <code>help</code> command to remind you of all available options and usage, it also works with the <code>new</code>, <code>build</code> and <code>serve</code> subcommands, e.g. <code>jekyll help new</code> or <code>jekyll help build</code>.
+When in doubt, use the `help` command to remind you of all available options and usage, it also works with the `new`, `build` and `serve` subcommands, e.g. `jekyll help new` or `jekyll help build`.
 {: .note .info }
 
 ## Next steps

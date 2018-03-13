@@ -1,5 +1,6 @@
 ---
 title: Variables
+description: Learn how to use variables in Jekyll.
 permalink: /docs/variables/
 ---
 

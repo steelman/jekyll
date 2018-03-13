@@ -1,5 +1,6 @@
 ---
 title: Basic Usage
+description: Basic Jekyll's build and serve commands.
 permalink: /docs/usage/
 ---
 

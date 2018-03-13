@@ -1,5 +1,6 @@
 ---
 title: Configuration
+description: Learn to configure Jekyll in any way you want.
 permalink: /docs/configuration/
 ---
 

@@ -1,30 +1,96 @@
 ---
 title: Installation
+description: Official guide to install Jekyll on macOS, GNU/Linux or Windows.
 permalink: /docs/installation/
 ---
 
-Getting Jekyll installed and ready-to-go should only take a few minutes.
-If it ever becomes a pain, please [file an issue]({{ site.repository }}/issues/new)
-(or submit a pull request) describing the issue you
-encountered and how we might make the process easier.
-
-### Requirements
-
 Installing Jekyll should be straight-forward if all requirements are met.
+
+- [Install on macOS](#macOS)
+- [Install on GNU/Linux](#Linux)
+- [Install on Windows](../windows/)
+
+## Install on macOS {#macOS}
+
+We only cover latest macOS High Sierra 10.13 here, who ships a new Ruby version, older systems will need to install Homebrew, see below.
+
+First, you need to [install Xcode from the AppStore](https://itunes.apple.com/fr/app/xcode/id497799835?mt=12). Then to install the command-line tools, open a terminal and run:
+
+```sh
+xcode-select --install
+```
+
+Check the pre-installed ruby and [RubyGems](https://rubygems.org/pages/download) versions:
+
+```sh
+ruby -v
+2.3.3
+gem --version
+2.7.6
+```
+
+Great, let's install Jekyll, we'll also need bundler to help us handle plugins and themes:
+
+```sh
+gem install bundler jekyll
+```
+
+You're ready to go, either by installing our default jekyll blog theme with `jekyll new my-jekyll-website` or by starting from scratch:
+
+```sh
+mkdir my-jekyll-website
+cd my-jekyll-website
+
+# Create a Gemfile
+bundle init
+
+# Add Jekyll
+bundle add jekyll
+
+# Install gems
+bundle install
+```
+
+From there you can either use a [theme](../themes/) or create your own.
+
+### Install via Homebrew
+
+You can install the latest version of Ruby via [Homebrew](https://brew.sh) a handy package manager for macOS.
+
+```sh
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install ruby
+```
+
+### Install Rbenv
+
+Developers should use [rbenv](https://github.com/rbenv/rbenv) to handle multiple ruby environnements
+
+```
+brew install rbenv ruby-build
+```
+
+Now we can install Ruby
+
+brew install rbenv ruby-build
+
+## Requirements
+
 Before you start, make sure your system has the following:
 
-- GNU/Linux, Unix, or macOS
-- [Ruby](https://www.ruby-lang.org/en/downloads/) version 2.2.5 or above, including all development
-  headers (ruby installation can be checked by running `ruby -v`, development headers can be checked on Ubuntu by running `apt list --installed  ruby-dev`)
+- [Ruby](https://www.ruby-lang.org/en/downloads/) version 2.2.5 or above, including all development headers (ruby installation can be checked by running `ruby -v`)
 - [RubyGems](https://rubygems.org/pages/download) (which you can check by running `gem -v`)
 - [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/) (in case your system doesn't have them installed, which you can check by running `gcc -v`,`g++ -v`  and `make -v` in your system's command line interface)
+
+## Install on GNU/Linux {#Linux}
+
+development headers can be checked on Ubuntu by running `apt list --installed  ruby-dev`
 
 <div class="note info">
   <h5>Problems installing Jekyll?</h5>
   <p>
     Check out the <a href="../troubleshooting/">troubleshooting</a> page or
-    <a href="{{ site.repository }}/issues/new">report an issue</a> so the
-    Jekyll community can improve the experience for everyone.
+    <a href="https://talk.jekyllrb.com">ask for help on our forum</a>.
   </p>
 </div>
 
@@ -37,28 +103,11 @@ Before you start, make sure your system has the following:
   </p>
 </div>
 
-## Install with RubyGems
+To upgrade to latest Rubygems, run:
 
-The best way to install Jekyll is via
-[RubyGems](https://rubygems.org/pages/download). At the terminal prompt,
-simply run the following command to install Jekyll:
-
-```sh
-gem install jekyll
 ```
-
-All of Jekyll’s gem dependencies are automatically installed by the above
-command, so you won’t have to worry about them at all.
-
-<div class="note info">
-  <h5>Installing Xcode Command-Line Tools</h5>
-  <p>
-    If you run into issues installing Jekyll's dependencies which make use of
-    native extensions and are using macOS, you will need to install Xcode
-    and the Command-Line Tools it ships with. Download them in
-    <code>Preferences &#8594; Downloads &#8594; Components</code>.
-  </p>
-</div>
+gem update --system
+```
 
 ## Pre-releases
 
@@ -87,24 +136,6 @@ script/bootstrap
 bundle exec rake build
 ls pkg/*.gem | head -n 1 | xargs gem install -l
 ```
-
-## Optional Extras
-
-There are a number of (optional) extra features that Jekyll supports that you
-may want to install, depending on how you plan to use Jekyll. These extras
-include LaTeX support, and the use of alternative content rendering engines.
-Check out [the extras page](../extras/) for more information.
-
-<div class="note">
-  <h5>ProTip™: Enable Syntax Highlighting</h5>
-  <p>
-    If you’re the kind of person who is using Jekyll, then chances are you’ll
-    want to enable syntax highlighting using <a href="http://pygments.org/">Pygments</a>
-    or <a href="https://github.com/jayferd/rouge">Rouge</a>. You should really
-    <a href="../templates/#code-snippet-highlighting">check out how to
-    do that</a> before you go any farther.
-  </p>
-</div>
 
 ## Already Have Jekyll?
 

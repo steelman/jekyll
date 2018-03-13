@@ -1,5 +1,6 @@
 ---
 title: Plugins
+description: Learn how to install and develop Jekyll plugins.
 permalink: /docs/plugins/
 ---
 

@@ -1,6 +1,6 @@
 ---
-layout: docs
 title: Upgrading
+description: Uprade to Jekyll 3 from older versions
 permalink: /docs/upgrading/
 ---
 

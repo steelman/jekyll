@@ -1,5 +1,6 @@
 ---
 title: Includes
+description: Learn how to use and add includes in Jekyll.
 permalink: /docs/includes/
 ---
 
