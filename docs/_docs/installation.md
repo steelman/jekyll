@@ -21,9 +21,9 @@ Before you start, make sure your system has the following:
 
 ## Install on macOS {#macOS}
 
-We only cover latest macOS High Sierra 10.13 here, who comes with Ruby 2.3.3, older systems will need to [install a more recent Ruby version via Homebrew](#homebrew).
+We only cover latest macOS High Sierra 10.13 here, which comes with Ruby 2.3.3, older systems will need to [install a more recent Ruby version via Homebrew](#homebrew).
 
-First, you need to [install Xcode from the AppStore](https://itunes.apple.com/fr/app/xcode/id497799835?mt=12). Then to install the command-line tools, open a terminal and run:
+First, you need to [install Xcode from the App Store](https://itunes.apple.com/app/xcode/id497799835?mt=12). Then to install the command-line tools, open a terminal and run:
 
 ```sh
 xcode-select --install
@@ -38,7 +38,7 @@ ruby -v
 gem update --system
 ```
 
-Great, let's install Jekyll, we'll also need [bundler](http://bundler.io/) to help us handle [plugins](../plugins) and [themes](../themes):
+Great, let's install Jekyll, we'll also need [bundler](https://bundler.io/) to help us handle [plugins](../plugins) and [themes](../themes):
 
 ```sh
 gem install bundler jekyll
