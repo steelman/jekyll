@@ -9,7 +9,7 @@ permalink: /docs/installation/
 - [Install on Windows](../windows/)
 - [Upgrade Jekyll](#upgrade-jekyll)
 
-Installing Jekyll should be straight-forward if all requirements are met.
+Installing Jekyll should be straight-forward if your system meets the requirements.
 
 ## Requirements
 
@@ -23,7 +23,7 @@ Before you start, make sure your system has the following:
 
 We only cover latest macOS High Sierra 10.13 here, which comes with Ruby 2.3.3, older systems will need to [install a more recent Ruby version via Homebrew](#homebrew).
 
-First, you need to [install Xcode from the App Store](https://itunes.apple.com/app/xcode/id497799835?mt=12). Then to install the command-line tools, open a terminal and run:
+First, you need to [install Xcode from the App Store](https://itunes.apple.com/app/xcode/id497799835?mt=12) or [from Apple Developer website](https://developer.apple.com/xcode/). Then to install the command-line tools, open a terminal and run:
 
 ```sh
 xcode-select --install
@@ -38,7 +38,7 @@ ruby -v
 gem update --system
 ```
 
-Great, let's install Jekyll, we'll also need [bundler](https://bundler.io/) to help us handle [plugins](../plugins) and [themes](../themes):
+Great, let's install Jekyll. We also need [bundler](https://bundler.io/) to help us handle [plugins](../plugins) and [themes](../themes):
 
 ```sh
 gem install bundler jekyll
